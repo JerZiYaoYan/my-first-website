@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jer Yan | My First Website</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(90%, 720px);
+      padding: 48px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 72px);
+      margin: 0 0 16px;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin: 0 0 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: white;
+      color: #1e3a8a;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="tag">First Online Website</div>
+    <h1>Hello, I’m Jer Yan.</h1>
+    <p>
+      這是我的第一個公開網頁。<br />
+      之後這裡可以改成作品集、鞋子試穿 Demo、3D 互動展示頁。
+    </p>
+    <a class="button" href="#">Start Exploring</a>
+  </main>
+</body>
+</html>
