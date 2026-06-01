@@ -3,79 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jer Yan | My First Website</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, "Noto Sans TC", sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card {
-      width: min(90%, 720px);
-      padding: 48px;
-      border-radius: 28px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(16px);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(36px, 7vw, 72px);
-      margin: 0 0 16px;
-      letter-spacing: -0.04em;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.7;
-      opacity: 0.9;
-      margin: 0 0 32px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 14px 24px;
-      border-radius: 999px;
-      background: white;
-      color: #1e3a8a;
-      text-decoration: none;
-      font-weight: bold;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
-    }
-
-    .tag {
-      display: inline-block;
-      margin-bottom: 24px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.16);
-      font-size: 14px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-  </style>
+  <title>Jer Yan | 3D & Interactive Designer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="card">
-    <div class="tag">First Online Website</div>
-    <h1>Hello, I’m Jer Yan.</h1>
-    <p>
-      這是我的第一個公開網頁。<br />
-      之後這裡可以改成作品集、鞋子試穿 Demo、3D 互動展示頁。
-    </p>
-    <a class="button" href="#">Start Exploring</a>
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-main">JER</span>
+      <span class="brand-sub">3D & INTERACTIVE<br />DESIGNER</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="#">Home</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="resume-button" href="#">Resume ↓</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">3D & Interactive Experience Designer</p>
+        <h1>Turning ideas into<br />visual <span>experiences.</span></h1>
+        <p class="hero-description">
+          I craft high-quality 3D visuals, motion design, and interactive
+          experiences that help products and brands tell their story,
+          engage audiences, and drive real impact.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#work">View My Work →</a>
+          <a class="showreel-button" href="#">▶ Play Showreel</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="AI smart glasses hero visual">
+        <div class="rock"></div>
+        <div class="glasses">
+          <div class="lens lens-left"></div>
+          <div class="lens lens-right"></div>
+          <div class="bridge"></div>
+          <div class="arm arm-left"></div>
+          <div class="arm arm-right"><span>AI</span></div>
+        </div>
+        <div class="reflection"></div>
+      </div>
+
+      <div class="socials">
+        <span>Behance</span>
+        <span>in</span>
+        <span>◎</span>
+        <span>✉</span>
+      </div>
+    </section>
+
+    <section class="experience-strip">
+      <span>Experience in</span>
+      <strong>ASICS</strong>
+      <strong>PUMA</strong>
+      <strong>INORA</strong>
+      <strong>LEAP MOTION</strong>
+      <strong>UNITY</strong>
+    </section>
+
+    <section id="work" class="section selected-work">
+      <div class="section-heading">
+        <h2>Selected Work</h2>
+        <a href="#">View All Projects →</a>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="card-image shoe-card"></div>
+          <div class="card-content">
+            <h3>ASICS | Metaspeed+</h3>
+            <p>Product Visualization & Motion Design</p>
+            <span>→</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-image interactive-card"></div>
+          <div class="card-content">
+            <h3>Leap Motion | Interactive Experience</h3>
+            <p>Unity Development / Gesture Interaction</p>
+            <span>→</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-image industrial-card"></div>
+          <div class="card-content">
+            <h3>INORA | Industrial Visualization</h3>
+            <p>3D Animation / Technical Illustration</p>
+            <span>→</span>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-image web3d-card"></div>
+          <div class="card-content">
+            <h3>Web 3D Product Experience</h3>
+            <p>Three.js / React / Interactive 3D</p>
+            <span>→</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <div id="about" class="about-block">
+        <h2>About Me</h2>
+        <p>
+          I’m a 3D & Interactive Experience Designer with 8+ years of experience
+          creating visual solutions for product, branding, and interactive media.
+          I combine aesthetics, technology, and storytelling to deliver memorable
+          experiences.
+        </p>
+        <a class="outline-button" href="#">More About Me</a>
+      </div>
+
+      <div id="services" class="services-block">
+        <h2>What I Do</h2>
+        <div class="service-item">
+          <span>◇</span>
+          <div>
+            <h3>Product Visualization</h3>
+            <p>High-quality 3D renders and animations that showcase products.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <span>◈</span>
+          <div>
+            <h3>Interactive Experiences</h3>
+            <p>Real-time 3D, Unity, WebGL experiences that engage users.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <span>✦</span>
+          <div>
+            <h3>Brand & Storytelling</h3>
+            <p>Visual storytelling that communicates brand value and emotion.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="contact-block">
+        <h2>Let’s Work Together</h2>
+        <p>Open to full-time opportunities, freelance projects, and collaborations.</p>
+        <p class="contact-line">✉ hello@jer-design.com</p>
+        <p class="contact-line">⌖ Taipei, Taiwan</p>
+        <a class="primary-button" href="mailto:hello@jer-design.com">Get In Touch →</a>
+      </div>
+    </section>
   </main>
 </body>
 </html>

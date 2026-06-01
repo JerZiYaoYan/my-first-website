@@ -1,11 +1,9 @@
-# My First Website
+# Jer Portfolio V1
 
-這是一個最簡單的個人網站範例。
+Jer Yan 個人作品集網站第一版。
 
 ## 檔案
+- index.html
+- styles.css
 
-- `index.html`：網站首頁
-
-## 部署方式
-
-可以上傳到 GitHub，然後用 Vercel 或 Cloudflare Pages 部署。
+把這兩個檔案上傳到原本的 GitHub repository，Vercel 會自動重新部署。
