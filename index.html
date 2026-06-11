@@ -1,183 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jer Yan | 3D & Interactive Designer</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#">
-      <span class="brand-main">JER</span>
-      <span class="brand-sub">3D & INTERACTIVE<br />DESIGNER</span>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jer Yan | 3D & Interactive Designer</title>
+    <meta
+      name="description"
+      content="Jer Yan is a 3D and Interactive Designer specializing in cinematic 3D product visualization, motion design, real-time interactive experiences, Unity XR prototypes, and AI-assisted 3D workflows."
+    />
+    <meta
+      name="keywords"
+      content="Jer Yan, JER YAN, 3D Designer, Interactive Designer, 3D Product Visualization, Motion Design, Unity XR, WebGL, Cinema 4D, Redshift, Octane, Taiwan"
+    />
+    <meta name="author" content="Jer Yan" />
 
-    <nav class="nav">
-      <a class="active" href="#">Home</a>
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <meta property="og:title" content="JER YAN | 3D & Interactive Designer" />
+    <meta
+      property="og:description"
+      content="A portfolio of 3D product visualization, motion design, real-time interactive experiences, Unity XR prototypes, and AI-assisted 3D workflows."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og/og-home.png" />
+    <meta property="og:url" content="" />
 
-    <a class="resume-button" href="#">Resume ↓</a>
-  </header>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JER YAN | 3D & Interactive Designer" />
+    <meta
+      name="twitter:description"
+      content="3D product visualization, motion design, real-time interactive experiences, Unity XR prototypes, and AI-assisted 3D workflows."
+    />
+    <meta name="twitter:image" content="assets/images/og/og-home.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">3D & Interactive Experience Designer</p>
-        <h1>Turning ideas into<br />visual <span>experiences.</span></h1>
-        <p class="hero-description">
-          I create cinematic 3D product visuals, motion design, 
-          and real-time interactive experiences that help brands 
-          communicate product value through visuals, motion, and technology.
-        </p>
+  <body>
+    <!-- Header：網站導覽列與語言 / 履歷按鈕 -->
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-main">JER</span>
+        <span class="brand-sub">3D & INTERACTIVE<br />DESIGNER</span>
+      </a>
 
-        <div class="hero-actions">
-          <a class="primary-button" href="#work">View My Work →</a>
-          <a class="showreel-button" href="#">▶ Play Showreel</a>
-        </div>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" type="button">中文</button>
+        <a
+          class="resume-button"
+          href="assets/files/Jer_Yan_Resume.pdf"
+          target="_blank"
+          rel="noopener"
+          data-en="Resume ↓"
+          data-zh="履歷 ↓"
+        >
+          Resume ↓
+        </a>
       </div>
+    </header>
 
-      <div class="hero-visual" aria-label="AI smart glasses hero visual">
-        <div class="rock"></div>
-        <div class="glasses">
-          <div class="lens lens-left"></div>
-          <div class="lens lens-right"></div>
-          <div class="bridge"></div>
-          <div class="arm arm-left"></div>
-          <div class="arm arm-right"><span>AI</span></div>
-        </div>
-        <div class="reflection"></div>
-      </div>
+    <main>
+      <!-- Hero：首頁主視覺區 -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">3D & Interactive Designer</p>
 
-      <div class="socials">
-        <span>Behance</span>
-        <span>in</span>
-        <span>◎</span>
-        <span>✉</span>
-      </div>
-    </section>
+          <h1>
+            Translating product value<br />
+            into visual <span>experiences.</span>
+          </h1>
 
-    <section class="experience-strip">
-      <span>Experience in</span>
-      <strong>ASICS</strong>
-      <strong>PUMA</strong>
-      <strong>INORA</strong>
-      <strong>LEAP MOTION</strong>
-      <strong>UNITY</strong>
-    </section>
+          <p class="hero-description">
+            I specialize in product visualization, motion design, and interactive
+            experiences, helping brands translate product features, technical
+            highlights, and key selling points into intuitive, persuasive visual content.
+          </p>
 
-    <section id="work" class="section selected-work">
-      <div class="section-heading">
-        <h2>Selected Work</h2>
-        <a href="#">View All Projects →</a>
-      </div>
-
-      <div class="work-grid">
-        <article class="work-card">
-          <div class="card-image shoe-card"></div>
-          <div class="card-content">
-            <h3>ASICS | Metaspeed+</h3>
-            <p>Product Visualization & Motion Design</p>
-            <span>→</span>
+          <div class="hero-tags">
+            <span>3D Product Visualization</span>
+            <span>Motion Design</span>
+            <span>Interactive Experience</span>
+            <span>Unity XR</span>
           </div>
-        </article>
 
-        <article class="work-card">
-          <div class="card-image interactive-card"></div>
-          <div class="card-content">
-            <h3>Leap Motion | Interactive Experience</h3>
-            <p>Unity Development / Gesture Interaction</p>
-            <span>→</span>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="card-image industrial-card"></div>
-          <div class="card-content">
-            <h3>INORA | Industrial Visualization</h3>
-            <p>3D Animation / Technical Illustration</p>
-            <span>→</span>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="card-image web3d-card"></div>
-          <div class="card-content">
-            <h3>Web 3D Product Experience</h3>
-            <p>Three.js / React / Interactive 3D</p>
-            <span>→</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="bottom-section">
-      <div id="about" class="about-block">
-        <h2>About Me</h2>
-        <p>
-          I’m a 3D & Interactive Designer specializing in product visualization, 
-          motion design, and real-time interactive experiences. 
-          My work combines cinematic visuals, Unity development, WebGL, 
-          and product storytelling.
-        </p>
-        <a class="outline-button" href="#">More About Me</a>
-      </div>
-
-      <div id="services" class="services-block">
-        <h2>What I Do</h2>
-        <div class="service-item">
-          <span>◇</span>
-          <div>
-            <h3>Product Visualization</h3>
-            <p>High-quality 3D renders and animations that showcase products.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#work">View My Work →</a>
+            <a class="showreel-button" href="#">▶ Play Showreel</a>
           </div>
         </div>
-        <div class="service-item">
-          <span>◈</span>
-          <div>
-            <h3>Interactive Experiences</h3>
-            <p>Real-time 3D, Unity, WebGL experiences that engage users.</p>
+
+        <div class="socials">
+          <span>Behance</span>
+          <span>in</span>
+          <span>◎</span>
+          <span>✉</span>
+        </div>
+      </section>
+
+      <!-- Featured Work：六個正式 Case Study -->
+      <section id="work" class="section selected-work">
+        <div class="section-heading">
+          <h2>Featured Work</h2>
+          <a
+            href="https://www.youtube.com/playlist?list=PL--kV1ApqGg3WF1HewtiujD434eUJIWef"
+            target="_blank"
+            rel="noopener"
+            data-en="View More Works →"
+            data-zh="查看更多作品 →"
+          >
+            View More Works →
+          </a>
+        </div>
+
+        <div class="work-grid featured-work-grid">
+          <a class="work-card" href="project-asics-gel-resolution-x.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-asics-gel-resolution-x/work-asics-gel-resolution-x.png"
+                alt="ASICS GEL-RESOLUTION X"
+              />
+            </div>
+            <div class="card-content">
+              <h3>ASICS GEL-RESOLUTION™ X</h3>
+              <p>Product Visualization / 3D Animation</p>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="project-anima-4everloop.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-anima-4everloop/work-anima-4everloop.png"
+                alt="ANIMA 4EVERLOOP"
+              />
+            </div>
+            <div class="card-content">
+              <h3>ANIMA 4EVERLOOP™</h3>
+              <p>Brand Film / Simulation & FX</p>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="project-asics-sonicblast.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-asics-sonicblast/work-asics-sonicblast.png"
+                alt="ASICS SONICBLAST B2B Technical Video"
+              />
+            </div>
+            <div class="card-content">
+              <h3>ASICS SONICBLAST™ B2B Technical Video</h3>
+              <p>Technical Visualization / Product Storytelling</p>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="project-nxel.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-nxel/work-nxel.png"
+                alt="NXEL Brand Visual Identity"
+              />
+            </div>
+            <div class="card-content">
+              <h3>NXEL Brand Visual Identity</h3>
+              <p>Brand Visual / 3D Product System</p>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="project-enterprise-ar.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-enterprise-ar/work-enterprise-ar.png"
+                alt="Enterprise AR Solutions"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Enterprise AR Solutions</h3>
+              <p>Unity / AR / R&D Prototype</p>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="project-character-revamp.html">
+            <div class="card-image">
+              <img
+                src="assets/images/project-character-revamp/work-character-revamp.png"
+                alt="Corporate IP Character Revamp"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Corporate IP Character Revamp</h3>
+              <p>3D Character / AI Workflow</p>
+              <span>→</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Experience Across：跨域經驗橫幅 -->
+      <section class="experience-strip">
+        <span data-en="Experience Across" data-zh="跨域經驗">
+          Experience Across
+        </span>
+
+        <strong>ASICS</strong>
+        <strong>ANIMA</strong>
+        <strong>PONY</strong>
+        <strong>R&amp;D</strong>
+        <strong>3D Visualization</strong>
+        <strong>Unity XR</strong>
+      </section>
+
+      <!-- Bottom Section：關於我 / 服務 / 聯絡 -->
+      <section class="bottom-section">
+        <div id="about" class="about-block">
+          <h2 data-en="About Me" data-zh="關於我">About Me</h2>
+
+          <p
+            data-en="I’m a 3D & Interactive Designer specializing in product visualization, motion design, and real-time interactive experiences. My work combines cinematic visuals, Unity development, WebGL, and product storytelling."
+            data-zh="我是一名 3D 與互動設計師，專注於產品視覺化、動態設計與即時互動體驗，擅長將產品特性轉化為具備質感與敘事性的視覺內容。"
+          >
+            I’m a 3D & Interactive Designer specializing in product
+            visualization, motion design, and real-time interactive experiences.
+            My work combines cinematic visuals, Unity development, WebGL, and
+            product storytelling.
+          </p>
+
+          <a
+            class="outline-button"
+            href="#"
+            data-en="More About Me"
+            data-zh="更多關於我"
+          >
+            More About Me
+          </a>
+        </div>
+        <div id="services" class="services-block">
+          <h2 data-en="What I Do" data-zh="我能做什麼">What I Do</h2>
+
+          <div class="service-item">
+            <span>◇</span>
+            <div>
+              <h3 data-en="Product Visualization" data-zh="產品視覺化">
+                Product Visualization
+              </h3>
+              <p
+                data-en="High-quality 3D renders and animations that showcase product design, material details, and key selling points."
+                data-zh="製作高品質 3D 渲染與產品動畫，呈現產品設計、材質細節與核心賣點。"
+              >
+                High-quality 3D renders and animations that showcase product
+                design, material details, and key selling points.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <span>◈</span>
+            <div>
+              <h3 data-en="Interactive Experiences" data-zh="即時互動體驗">
+                Interactive Experiences
+              </h3>
+              <p
+                data-en="Real-time 3D, Unity, WebGL, and XR prototypes that turn products into interactive digital experiences."
+                data-zh="運用即時 3D、Unity、WebGL 與 XR 原型，將產品轉化為可互動的數位體驗。"
+              >
+                Real-time 3D, Unity, WebGL, and XR prototypes that turn products
+                into interactive digital experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <span>✦</span>
+            <div>
+              <h3 data-en="Brand & Storytelling" data-zh="品牌視覺敘事">
+                Brand & Storytelling
+              </h3>
+              <p
+                data-en="Visual storytelling that translates product value, technology, and brand identity into memorable visual content."
+                data-zh="將產品價值、技術特性與品牌識別，轉化為具記憶點的視覺內容。"
+              >
+                Visual storytelling that translates product value, technology,
+                and brand identity into memorable visual content.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="service-item">
-          <span>✦</span>
-          <div>
-            <h3>Brand & Storytelling</h3>
-            <p>Visual storytelling that communicates brand value and emotion.</p>
-          </div>
+
+        <div id="contact" class="contact-block">
+          <h2 data-en="Let’s Work Together" data-zh="一起合作">
+            Let’s Work Together
+          </h2>
+          <p
+            data-en="Open to full-time opportunities, freelance projects, and collaborations."
+            data-zh="目前開放全職機會、自由接案與專案合作。"
+          >
+            Open to full-time opportunities, freelance projects, and
+            collaborations.
+          </p>
+          <p class="contact-line">✉ jer50128@gmail.com</p>
+          <p class="contact-line">⌖ Taichung, Taiwan</p>
+          <a
+            class="primary-button"
+            href="mailto:jer50128@gmail.com"
+            data-en="Get In Touch →"
+            data-zh="聯絡我 →"
+          >
+            Get In Touch →
+          </a>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <div id="contact" class="contact-block">
-        <h2>Let’s Work Together</h2>
-        <p>Open to full-time opportunities, freelance projects, and collaborations.</p>
-        <p class="contact-line">✉ jer50128@gmail.com</p>
-        <p class="contact-line">⌖ Taipei, Taiwan</p>
-        <a class="primary-button" href="mailto:hello@jer-design.com">Get In Touch →</a>
-      </div>
-    </section>
-  </main>
+    <div class="showreel-modal" aria-hidden="true">
+      <div class="showreel-content">
+        <button class="showreel-close" aria-label="Close showreel">×</button>
 
-  <div class="showreel-modal" aria-hidden="true">
-    <div class="showreel-content">
-      <button class="showreel-close" aria-label="Close showreel">×</button>
-      <div class="showreel-video">
-        <iframe
-          class="showreel-frame"
-          src=""
-          title="Jer Yan Showreel"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
+        <div class="showreel-video">
+          <iframe
+            class="showreel-frame"
+            src=""
+            title="Jer Yan Showreel"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
